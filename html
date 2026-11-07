@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BhashaBridge - Voice AI Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🚀 BhashaBridge</h1>
+            <p>Voice-First Multilingual AI Customer Support Assistant</p>
+        </header>
+
+        <main>
+            <div class="status-card">
+                <span id="status-indicator" class="status-dot disconnected"></span>
+                <span id="status-text">Disconnected from System</span>
+            </div>
+
+            <div class="controls">
+                <button id="config-btn" class="btn secondary">⚙️ Configure API Key</button>
+                <button id="mic-btn" class="btn primary" disabled>🎤 Hold to Talk</button>
+            </div>
+
+            <div class="conversation-box">
+                <div class="log-entry">
+                    <strong>User:</strong>
+                    <p id="user-transcript" class="placeholder">Your speech will appear here...</p>
+                </div>
+                <div class="log-entry">
+                    <strong>BhashaBridge:</strong>
+                    <p id="ai-response" class="placeholder">AI voice response status...</p>
+                </div>
+            </div>
+        </main>
+        
+        <audio id="audio-player" autoplay></audio>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
